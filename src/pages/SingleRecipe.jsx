@@ -81,7 +81,7 @@ useEffect(()=>{
     {/* Right: Form */}
     <form className="w-full lg:w-1/2 overflow-auto flex flex-col gap-3" onSubmit={handleSubmit(submitHandler)}>
       <input className="block border-b outline-0 p-2 w-full" {...register("image")} type="url" placeholder="Enter image URL" />
-      <small className="text-red-500">This is how error is shown</small>
+      
       <input className="block border-b outline-0 p-2 w-full" {...register("title")} type="text" placeholder="Recipe title" />
       <input className="block border-b outline-0 p-2 w-full" {...register("chef")} type="text" placeholder="Chef name" />
       <textarea className="block border-b outline-0 p-2 w-full resize-none" {...register("description")} placeholder="Description"></textarea>
