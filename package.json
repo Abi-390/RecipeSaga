@@ -17,7 +17,8 @@
     "react-hook-form": "^7.66.1",
     "react-router-dom": "^7.7.1",
     "react-toastify": "^11.0.5",
-    "tailwindcss": "^4.1.11"
+    "tailwindcss": "^4.1.11",
+    "vite-plugin-pwa": "^1.2.0"
   },
   "devDependencies": {
     "@eslint/js": "^9.30.1",

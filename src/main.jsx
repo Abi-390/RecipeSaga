@@ -4,14 +4,15 @@ import App from "./App.jsx";
 import { BrowserRouter } from "react-router-dom";
 import { ToastContainer } from "react-toastify";
 import RecipeContext from "./context/RecipeContext.jsx";
+import { registerSW } from "virtual:pwa-register";
 
-
+registerSW();
 createRoot(document.getElementById("root")).render(
-  
-   <RecipeContext> <BrowserRouter>\
-    <App />
-    <ToastContainer/>
+  <RecipeContext>
+    {" "}
+    <BrowserRouter>
+      <App />
+      <ToastContainer />
     </BrowserRouter>
-    </RecipeContext>
-  
+  </RecipeContext>,
 );
